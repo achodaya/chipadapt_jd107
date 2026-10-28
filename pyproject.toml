@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "achodaya-chipadapt_jd107"
+version = "0.1.0"
+description = "从样本里推断推理芯片适配工程师·流水线的数据倾斜应有的字段集合，逐字段检查存在性与类型，缺失项单独列出"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "achodaya" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://achodaya.github.io"
+Repository = "https://github.com/achodaya/chipadapt_jd107"
+Issues = "https://github.com/achodaya/chipadapt_jd107/issues"
+
+[project.scripts]
+chipadapt_jd107 = "chipadapt_jd107:main"
+
+[tool.setuptools]
+py-modules = ["chipadapt_jd107"]
